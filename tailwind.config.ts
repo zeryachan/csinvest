@@ -47,20 +47,19 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        success: {
-          DEFAULT: "hsl(var(--success))",
-          foreground: "hsl(var(--success-foreground))",
+        profit: {
+          DEFAULT: "hsl(var(--profit))",
+          foreground: "hsl(var(--profit-foreground))",
+          muted: "hsl(var(--profit-muted))",
         },
-        warning: {
-          DEFAULT: "hsl(var(--warning))",
-          foreground: "hsl(var(--warning-foreground))",
+        loss: {
+          DEFAULT: "hsl(var(--loss))",
+          foreground: "hsl(var(--loss-foreground))",
+          muted: "hsl(var(--loss-muted))",
         },
-        chart: {
-          1: "hsl(var(--chart-1))",
-          2: "hsl(var(--chart-2))",
-          3: "hsl(var(--chart-3))",
-          4: "hsl(var(--chart-4))",
-          5: "hsl(var(--chart-5))",
+        neutral: {
+          DEFAULT: "hsl(var(--neutral))",
+          foreground: "hsl(var(--neutral-foreground))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -74,14 +73,16 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-profit': 'var(--gradient-profit)',
+        'gradient-loss': 'var(--gradient-loss)',
         'gradient-card': 'var(--gradient-card)',
-        'gradient-success': 'var(--gradient-success)',
-        'gradient-danger': 'var(--gradient-danger)',
+        'gradient-premium': 'var(--gradient-premium)',
       },
       boxShadow: {
-        'glow': 'var(--shadow-glow)',
+        'profit': 'var(--shadow-profit)',
+        'loss': 'var(--shadow-loss)',
         'card': 'var(--shadow-card)',
+        'premium': 'var(--shadow-premium)',
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -8,54 +8,58 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
+    /* Professional Black Theme */
+    --background: 0 0% 3%;
     --foreground: 0 0% 98%;
 
-    --card: 240 10% 3.9%;
+    --card: 0 0% 6%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 240 10% 3.9%;
+    --popover: 0 0% 6%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 221 83% 53%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
 
-    --secondary: 240 3.7% 15.9%;
+    --secondary: 0 0% 9%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 63%;
 
-    --accent: 240 3.7% 15.9%;
+    --accent: 0 0% 9%;
     --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 221 83% 53%;
+    --border: 0 0% 14%;
+    --input: 0 0% 14%;
+    --ring: 0 0% 83%;
 
-    /* Custom CS2 Investment Theme */
-    --chart-1: 221 83% 53%;
-    --chart-2: 261 83% 58%;
-    --chart-3: 142 72% 29%;
-    --chart-4: 42 87% 55%;
-    --chart-5: 0 84% 60%;
-
-    --success: 142 72% 29%;
-    --success-foreground: 0 0% 98%;
+    /* Professional Financial Colors */
+    --profit: 120 100% 35%;
+    --profit-foreground: 0 0% 98%;
+    --profit-muted: 120 100% 25%;
     
-    --warning: 42 87% 55%;
-    --warning-foreground: 0 0% 98%;
+    --loss: 0 84% 60%;
+    --loss-foreground: 0 0% 98%;
+    --loss-muted: 0 84% 45%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(221 83% 53%), hsl(261 83% 58%));
-    --gradient-card: linear-gradient(145deg, hsl(240 3.7% 15.9%), hsl(240 3.7% 10%));
-    --gradient-success: linear-gradient(135deg, hsl(142 72% 29%), hsl(142 72% 35%));
-    --gradient-danger: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 50%));
+    --neutral: 0 0% 63%;
+    --neutral-foreground: 0 0% 98%;
 
-    --shadow-glow: 0 0 20px hsl(221 83% 53% / 0.15);
-    --shadow-card: 0 4px 12px hsl(240 10% 3.9% / 0.5)
+    /* Professional Gradients */
+    --gradient-profit: linear-gradient(135deg, hsl(120 100% 35%), hsl(120 100% 45%));
+    --gradient-loss: linear-gradient(135deg, hsl(0 84% 60%), hsl(0 84% 50%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 6%), hsl(0 0% 4%));
+    --gradient-premium: linear-gradient(135deg, hsl(0 0% 98%), hsl(0 0% 85%));
+
+    /* Professional Shadows */
+    --shadow-profit: 0 0 20px hsl(120 100% 35% / 0.15);
+    --shadow-loss: 0 0 20px hsl(0 84% 60% / 0.15);
+    --shadow-card: 0 4px 20px hsl(0 0% 0% / 0.25);
+    --shadow-premium: 0 8px 30px hsl(0 0% 0% / 0.4);
 
     --radius: 0.5rem;
 
@@ -77,41 +81,41 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 0 0% 3%;
     --foreground: 0 0% 98%;
 
-    --card: 240 10% 3.9%;
+    --card: 0 0% 6%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 240 10% 3.9%;
+    --popover: 0 0% 6%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 221 83% 53%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
 
-    --secondary: 240 3.7% 15.9%;
+    --secondary: 0 0% 9%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 63%;
 
-    --accent: 240 3.7% 15.9%;
+    --accent: 0 0% 9%;
     --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 221 83% 53%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 0 0% 14%;
+    --input: 0 0% 14%;
+    --ring: 0 0% 83%;
+    --sidebar-background: 0 0% 4%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 0% 98%;
+    --sidebar-primary-foreground: 0 0% 9%;
+    --sidebar-accent: 0 0% 9%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 14%;
+    --sidebar-ring: 0 0% 83%;
   }
 }
 
