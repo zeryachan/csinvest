@@ -1,11 +1,11 @@
 import { Navigation } from "@/components/Navigation";
-import { Dashboard } from "@/components/Dashboard";
+import { RealTimeDashboard } from "@/components/RealTimeDashboard";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <Dashboard />
+      <RealTimeDashboard />
     </div>
   );
 };
